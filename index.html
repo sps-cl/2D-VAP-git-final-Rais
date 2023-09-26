@@ -37,6 +37,7 @@
             <input type="checkbox" v-on:change="doCheck(index, 'need')"/>
             <span>{{ mask.title }}</span>
           </div>
+          <button class="btn-remove" v-on:click="removeMask(index, 'need')">Odstranit</button>
         </li>
       </ul>
       <h2>
@@ -52,6 +53,7 @@
             <input type="checkbox" v-on:change="doCheck(index, 'complete')"  checked>
             <span>{{ mask.title }}</span>
           </div>
+          <button class="btn-remove" v-on:click="removeMask(index, 'complete')">Odstranit</button>
         </li>
       </ul>
     </div>
